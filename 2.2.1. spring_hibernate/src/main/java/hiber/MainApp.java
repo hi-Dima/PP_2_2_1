@@ -22,9 +22,9 @@ public class MainApp {
       Car car1 = new Car("Ниссан",15);
       Car car2 = new Car("Мерседес",12);
       Car car3 = new Car("Ниссан",15);
-      user1.setCarDetails(car1);
-      user2.setCarDetails(car2);
-      user3.setCarDetails(car3);
+      user1.setCarId(car1);
+      user2.setCarId(car2);
+      user3.setCarId(car3);
       userService.add(user1);
       userService.add(user2);
       userService.add(user3);

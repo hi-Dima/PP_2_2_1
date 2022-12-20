@@ -16,15 +16,15 @@ public class User {
    @Column(name = "last_name")
    private String lastName;
 
-   public void setCarDetails(Car carDetails) {
-      this.carDetails = carDetails;
+   public void setCarId(Car carId) {
+      this.carId = carId;
    }
    @OneToOne(cascade = CascadeType.ALL)
    @JoinColumn(name = "car_id")
-   private Car carDetails;
+   private Car carId;
 
-   public Car getCarDetails() {
-      return carDetails;
+   public Car getCarId() {
+      return carId;
    }
 
    @Column(name = "email")
@@ -64,7 +64,7 @@ public class User {
               "id=" + id +
               ", firstName='" + firstName + '\'' +
               ", lastName='" + lastName + '\'' +
-              ", carDetails=" + carDetails +
+              ", carDetails=" + carId +
               ", email='" + email + '\'' +
               '}';
    }

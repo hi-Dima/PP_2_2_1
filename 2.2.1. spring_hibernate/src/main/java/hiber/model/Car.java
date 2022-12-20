@@ -1,5 +1,4 @@
 package hiber.model;
-
 import javax.persistence.*;
 
 @Entity
@@ -8,9 +7,6 @@ public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @OneToOne (cascade = CascadeType.ALL)
-    private User user;
     @Column
     private String model;
 
@@ -18,16 +14,8 @@ public class Car {
         this.id = id;
     }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
-
     public Long getId() {
         return id;
-    }
-
-    public User getUser() {
-        return user;
     }
 
     @Column
