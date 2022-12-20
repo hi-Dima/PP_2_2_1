@@ -29,7 +29,6 @@ public class UserDaoImp implements UserDao {
       return user;
    }
    @Override
-   @SuppressWarnings("unchecked")
    public List<User> listUsers() {
       TypedQuery<User> query=sessionFactory.getCurrentSession().createQuery("from User");
       return query.getResultList();

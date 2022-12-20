@@ -19,8 +19,6 @@ public class User {
    public void setCarDetails(Car carDetails) {
       this.carDetails = carDetails;
    }
-
-//   @OneToOne(cascade = CascadeType.ALL)
    @OneToOne(cascade = CascadeType.ALL)
    @JoinColumn(name = "car_id")
    private Car carDetails;

@@ -9,7 +9,6 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-//    @OneToOne(mappedBy = "carDetails",cascade = CascadeType.ALL)
     @OneToOne (cascade = CascadeType.ALL)
     private User user;
     @Column
